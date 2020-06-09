@@ -8,12 +8,3 @@ services:
      - ./statics:/usr/share/nginx/html:ro
     ports:
      - "80:80"
-    #  - "192.168.76.54:9292:9292"
-    # networks:
-    # - host
-    # environment:
-    #  - NGINX_HOST=foobar.com
-    #  - NGINX_PORT=80
-# networks:
-#   host:
-#       external: true
