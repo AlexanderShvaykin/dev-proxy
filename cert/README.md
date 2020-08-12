@@ -1,1 +1,2 @@
-Copy to this folder cert.pem and key.pem for you domain
+Run
+`minica --domains "go.teachbase.local, teachbase.local, localhost"`
