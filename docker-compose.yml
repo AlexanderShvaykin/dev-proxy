@@ -2,11 +2,10 @@ version: '3.4'
 
 services:
   dev-proxy:
-    image: nginx
+    image: "haproxy:lts-alpine"
     volumes:
-     - ./nginx.conf:/etc/nginx/nginx.conf:ro
-     - ./statics:/usr/share/nginx/html:ro
-     - ./cert:/etc/nginx/cert:ro
+     - ./haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg
+     - ./cert/cert.crt:/etc/ssl/certs/beeline.uz_global_2023.pem:ro
     ports:
-     - "80:80"
      - "443:443"
+     - "80:80"
